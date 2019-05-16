@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'pip install -r requirements.txt'
-	sh 'pwd'
+        sh 'python3 app.py'
       }
     }
   }
